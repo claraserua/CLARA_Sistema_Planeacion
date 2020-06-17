@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<title>Demos for Acorn Media Player, Accessible and customizable HTML5 media player</title>	
+	<link href="website/css/amp-demos.css" rel="stylesheet" type="text/css" />	
+	
+	<!-- Acorn Media Player specific -->
+	<link href="acornmediaplayer/acornmediaplayer.base.css" rel="stylesheet" type="text/css">
+	<!-- Themes -->
+	<link href="acornmediaplayer/themes/access/acorn.access.css" rel="stylesheet" type="text/css">
+	<link href="acornmediaplayer/themes/darkglass/acorn.darkglass.css" rel="stylesheet" type="text/css">
+	<link href="acornmediaplayer/themes/barebones/acorn.barebones.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+		
+	<section>
+		<h3>Darkglass theme and vertical volume slider</h3>
+		
+		<figure>
+			<video id="demo3" controls width="826" height="360" poster="website/images/tos-poster.jpg" preload="metadata" aria-describedby="full-descript">
+				<source type="video/webm" src="https://acornmedia.herokuapp.com/media/tears_of_steel_480.webm" />
+				<source type="video/mp4" src="https://acornmedia.herokuapp.com/media/tears_of_steel_480.mp4" />
+				
+				<track src="subs/TOS-arabic.srt" kind="subtitles" srclang="ar" label="Arabic" />
+				<track src="subs/TOS-japanese.srt" kind="subtitles" srclang="jp" label="Japanese" />
+				<track src="subs/TOS-english.srt" kind="subtitles" srclang="en" label="English" />
+				<track src="subs/TOS-turkish.srt" kind="subtitles" srclang="tr" label="Turkish" />
+				<track src="subs/TOS-ukrainian.srt" kind="subtitles" srclang="uk" label="Ukrainian" />
+				
+				You can download Tears of Steel at <a href="http://mango.blender.org/">mango.blender.org</a>.
+			</video>
+			<figcaption id="full-descript">
+				<p><em>"Tears of Steel"</em> was realized with crowd-funding by users of the open source 3D creation tool <a href="http://www.blender.org">Blender</a>. Target was to improve and test a complete open and free pipeline for visual effects in film - and to make a compelling sci-fi film in Amsterdam, the Netherlands. </p>
+				<p>(CC) Blender Foundation - <a href="http://www.tearsofsteel.org">http://www.tearsofsteel.org</a></p>
+			</figcaption>
+		</figure>
+		
+		<figure>		
+			<audio id="demo3-audio" aria-describedby="demo3-audio-descript">
+				<source type="audio/ogg" src="https://acornmedia.herokuapp.com/media/ptburnem-gypsyheartrock.ogg" />
+				<source type="audio/mp3" src="https://acornmedia.herokuapp.com/media/ptburnem-gypsyheartrock.mp3" />
+			</audio>
+			<figcaption id="demo3-audio-descript">
+				P.T.Burnem's track "Gypsy Heart Rock" from the "Paper Cranes" album.
+			</figcaption>
+		</figure>
+		
+		<p><code>darkglass</code> only works properly with vertical volume sliders. </p>
+<pre><code>&lt;link href=&quot;/path/to/themes/darkglass/acorn.darkglass.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></pre>		
+<pre><code>jQuery('video').acornMediaPlayer({
+	theme: 'darkglass',
+	volumeSlider: 'vertical'
+});</code></pre>
+	</section>
+	
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="acornmediaplayer/jquery.acornmediaplayer.js"></script>	
+	
+	<!-- Call the plugin --> 
+	<script>
+		jQuery(function() {
+			// demo3
+			jQuery('#demo3, #demo3-audio').acornMediaPlayer({
+				theme: 'darkglass',
+				volumeSlider: 'vertical'
+			});
+			
+		});
+	</script>
+	
+
+	
+</body>
+</html>
