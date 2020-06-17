@@ -1,0 +1,92 @@
+﻿<?php
+/**
+ * Config
+ *
+ * Core system configuration file
+ *
+ * @package		App
+ * @author		Ruiz Garcia Jose Carlos
+ * @copyright	(c) 2012 Red de Universidades Anáhuac
+ * @license		http://www.redanahuac.mx/license
+ *******************************************************************
+ */
+
+
+
+/**
+ * Database
+ *
+ * This system uses PDO to connect to MySQL, SQLite, or PostgreSQL, SQLSERVER , ORACLE.
+ */
+   
+# Conexion DB
+//define('HOST','172.19.11.38');	
+define('HOST','tcp:claradbp.database.windows.net,1433');
+define('DB', 'planeacion');
+define('USERDB', 'planeacion');
+define('PWDDB', 'Pl@n3ac10n01');
+define('TYPE', 'sqlsrv');
+//define('TYPE', 'mssql');
+
+//define('HOST','tcp:serua-clara-db.southcentralus.cloudapp.azure.com,1433');
+//define('DB', 'planeacionp');
+//define('USERDB', 'sqladminclara');
+//define('PWDDB', 'C@rlos6132000');
+//define('TYPE', 'sqlsrv');
+
+
+define('APPDIRECTORY', '\\app\\planeacion\\');
+
+
+define('RAIZ', dirname(__FILE__).'\\');
+
+define('TEMPLATE',"views\\");
+define('TEMPLATEADMIN',"skins\\admin\\");
+
+
+/*register_shutdown_function( "check_for_fatal" );
+set_error_handler( "log_error" );
+set_exception_handler( "log_exception" );
+ini_set( "display_errors", "off" );*/
+error_reporting( E_ALL );
+
+
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(E_ALL);
+
+date_default_timezone_set("America/Mexico_City");
+
+ini_set('memory_limit', '-1');
+ini_set('max_execution_time', 3000);
+
+ini_set('session.cookie_httponly', 1);
+
+// **PREVENTING SESSION FIXATION**
+// Session ID cannot be passed through URLs
+ini_set('session.use_only_cookies', 1);
+
+// Uses a secure connection (HTTPS) if possible
+ini_set('session.cookie_secure', 1);
+
+
+
+$config['site_url'] = '\\';
+
+$config['app_dir'] = '\\planeacion';
+
+$config['error_page'] = 'error.app';
+
+
+
+
+// Enable debug mode?
+$config['debug'] = TRUE;
+
+// Load boostrap file?
+$config['bootstrap'] = FALSE;
+
+// Available translations (Array of Locales)
+$config['languages'] = array('es');
+
+?>
