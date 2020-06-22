@@ -1,0 +1,129 @@
+#notificaciones{
+	display:none;	
+	position:absolute;
+	top:54px;
+	right:50px;
+	z-index:700;
+}
+
+
+#notificaciones .flecha{
+	position:relative; 
+	float:right; 
+	top:-23px; 
+	right:40px;
+	border-style: solid; 
+	border-width: 12px;
+	width: 0; 
+	z-index:800;
+	border-color: transparent transparent #FFF transparent; 
+	background:transparent; 
+	}
+
+
+
+
+#comentarios-alert{
+	display:none;	
+	position:absolute;
+	top:54px;
+	right:100px;
+	z-index:700;
+}
+
+
+#comentarios-alert .flecha{
+	position:relative; 
+	float:right; 
+	top:-23px; 
+	right:30px;
+	border-style: solid; 
+	border-width: 12px;
+	width: 0; 
+	z-index:800;
+	border-color: transparent transparent #FFF transparent; 
+	background:transparent; 
+	}
+
+.menu-alertas {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 285px;
+}
+
+.menu-alertas li {
+	list-style:none;
+}
+	
+.menu-alertas li.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    padding: 7px 10px;
+    text-align: left;
+}
+.menu-alertas .menu-item-alerta {
+    height: 200px;
+    overflow: auto;
+}
+.menu-alertas li.loader {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.menu-alertas li.footer a {
+    background: linear-gradient(to bottom, #F9F9F9 0%, #EEEEEE 100%) repeat scroll 0 0 transparent;
+    border-bottom: medium none;
+    border-radius: 0 0 3px 3px;
+    color: #888888;
+    padding: 7px 0;
+    text-align: center;
+}
+.menu-alertas li.unread a {
+    background: none repeat scroll 0 0 #FFE7CE;
+}
+.menu-alertas li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+.menu-alertas li a img,  .menu-alertas li a .detail {
+    display: inline-block;
+    vertical-align: top;
+}
+.menu-alertas li a img {
+    margin-top: 7px;
+	margin-left: 7px;
+}
+.menu-alertas li a i.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+.menu-alertas li a .detail {
+    margin-left: 10px;
+    overflow: hidden;
+    width: 190px;
+}
+.menu-alertas li a .detail .name {
+    display: block;
+    font-weight: 700;
+}
+
+.menu-alertas li a .detail .message {
+    color: #666666;
+    display: block;
+    font-size: 12px;
+}
+
+.menu-alertas li a .detail .datetime {
+    color: #666666;
+    display: block;
+    font-size: 10px;
+}
+
+.menu-alertas li:hover{
+	background-color: #EEEEEE;
+	}

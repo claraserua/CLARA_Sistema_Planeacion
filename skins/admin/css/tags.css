@@ -1,0 +1,8 @@
+#tags { width:95%; padding:3px 3px 0; margin:5px; border:1px solid #aaa; background-color:#fff; cursor:text; }
+
+#tags span { display:block; width:auto; margin:0 3px 3px 0; padding:3px 20px 4px 8px; position:relative; float:left; text-indent:0; background-color:#eee; border:1px solid #333; -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px; color:#333; font:normal 11px Verdana, Sans-serif; }
+#tags span a { position:absolute; right:8px; top:2px; color:#666; font:bold 12px Verdana, Sans-serif; text-decoration:none; }
+#tags span a:hover { color:#ff0000; }
+.ui-menu .ui-menu-item { white-space:nowrap; padding:0 10px 0 0; }
+
+#totag { width:80px !important; margin:0 0 2px 0 !important; padding:0 0 3px !important; position:relative !important; top:0 !important;  float:left !important;  border:none !important; box-shadow: none !important; -moz-box-shadow: none !important;  }

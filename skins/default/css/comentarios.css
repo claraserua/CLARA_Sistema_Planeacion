@@ -1,0 +1,220 @@
+/* Form & timeline styles */
+
+#twitter-container{
+	margin:0 auto;
+	padding:20px 20px 0 20px;
+	width:800px;
+	font-size:11px;
+	font-family:'Lucida Grande',sans-serif;
+	color:#333333;
+	-moz-border-radius:12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius:12px;
+	border:6px solid #f5f5f5;
+	
+	
+}
+label{
+	font-size:20px;
+	display:block;
+}
+
+.counter{
+	color:#CCCCCC;
+	float:right;
+	font-family:Georgia,serif;
+	font-size:12px;
+	font-weight:bold;
+	/*height:40px;*/
+	overflow:hidden;
+}
+
+textarea{
+	width:800px;
+	height:50px;
+	margin:5px 0 10px 0;
+	padding:7px;
+	overflow:auto;
+	font-size:14px;
+	color:#3a3a3b;
+	border: 1px solid #aaa;
+	font: normal 13px 'Bree Serif', sans-serif;
+	-webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
+	
+		
+}
+
+.clear{
+	clear:both;
+}
+
+
+
+.submitButton {
+    background: url("img/button_bg.gif") repeat-x scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    color: #666666;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    height: 32px;
+    width: 115px !important;
+}
+.submitButton:hover {
+    background-position: center bottom;
+    border-color: #DDDDDD;
+    color: #333333;
+}
+.inact, .inact:hover {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #EEEEEE;
+    color: #AAAAAA;
+    cursor: auto;
+}
+
+
+/* ------------status body ---------------*/
+.comentarios{
+	width:800px;
+	margin:0 auto;
+}
+#flash{
+	width:550px;
+	margin:0 auto;
+	font-size:12px;
+	padding-top:4px;
+}
+.stbody{
+	margin-top:8px;
+	padding-bottom:8px;
+	border-bottom:dashed 1px #333333;
+	overflow:auto;
+	/*background: #F5F5F5;*/
+}
+
+
+.stbody2{
+	margin-top:8px;
+	padding-bottom:8px;
+	border-bottom:dashed 1px #B50000;
+	overflow:auto;
+	background: #EFEFEF; /*#FEF4EB;*/
+	}
+
+.sttimg{
+	float:left;
+	height:60px;
+	width:60px;
+	border:solid 1px #CCCCCC;
+	background-color:#fff;
+	padding:3px;
+}
+.sttext{
+	margin-left:70px;
+	min-height:50px;
+	/*word-wrap:break-word;*/
+	overflow:hidden;
+	padding:5px;
+	display:block;
+	font: normal 12px 'Bree Serif', sans-serif;
+	width:720px;
+	color:#333333;
+}
+.sttext b{
+	color:#006699;
+}
+
+.sttext a{
+	color:#006699;
+}
+
+.sttime{
+	font-size:11px;
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:5px;
+}
+.stdelete,.stdeleter,.stdeleteop,.stdeleters{
+	font-weight:bold;
+	float:right;
+	cursor:pointer;
+}
+
+
+.stmandatorio{
+	font-weight:bold;
+	float:right;
+	color: #C10000;
+}
+
+
+#stexpandbox{
+	margin-top:10px;
+}
+#stexpandbox img{
+	border:solid 1px #dedede;
+	padding:3px;
+}
+/* Comment */
+.stcommentbody{
+	border-bottom:solid 1px #fff;
+	background-color:#f2f2f2;
+	padding:5px;
+	width:400px;
+	overflow:auto;
+}
+.stcommentimg
+{
+	float:left;
+	height:35px;
+	width:35px;
+	border:solid 1px #dedede;
+	padding:2px;
+}
+.stcommenttext{
+	margin-left:45px;
+	min-height:40px;
+	word-wrap:break-word;
+	overflow:hidden;
+	padding:3px;
+	display:block;
+	font-size:11px;
+	width:350px;
+}
+.stcommenttext b{
+	color:#006699;
+}
+.stcommenttime{
+	font-size:11px;
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:5px;
+}
+.stcommentdelete {
+	font-weight:bold;
+	float:right;
+	cursor:pointer;
+}
+.commentupdate{
+	background-color:#f2f2f2;
+	width:400px;
+	padding:5px;
+}
+.comment{
+	width:330px;
+	height:35px;
+	font-size:11px;
+}
+/* faceb image*/
+.small_face{
+	width:35px;
+	height:35px
+}
+.big_face{
+	width:60px;
+	height:60px
+}

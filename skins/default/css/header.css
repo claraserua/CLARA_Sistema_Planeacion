@@ -1,0 +1,180 @@
+.header {
+    /*background: none repeat scroll 0 0 #F4491D;*/
+    
+     background: url("../images/header.png") no-repeat #F4491D;
+    
+    /*clear: both;*/
+	white-space:nowrap; 
+    height: 110px;
+}
+.headerinner {
+    margin-left: 260px;
+}
+.header .logo {
+    float: left;
+    padding-top: 0px;
+    text-align: center;
+    width: 260px;
+}
+.headmenu {
+    list-style: none outside none;
+}
+.headmenu .dropdown-menu {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #0866C6 #0866C6;
+    border-image: none;
+    border-right: 2px solid #0866C6;
+    border-style: none solid solid;
+    border-width: 0 2px 2px;
+    margin: 0;
+}
+.headmenu .nav-header {
+    font-weight: normal;
+    text-shadow: none;
+}
+.headmenu .dropdown-menu:after {
+    border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 45px;
+    position: absolute;
+    top: -6px;
+}
+.headmenu > li {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    position: relative;
+}
+.headmenu > li:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.headmenu > li.odd {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+}
+.headmenu > li.right {
+    float: right;
+}
+.headmenu > li > a {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    min-width: 70px;
+    padding: 25px 20px 9px;
+    position: relative;
+}
+.headmenu > li > a:hover {
+    text-decoration: none;
+}
+.headmenu > li > a .count {
+    opacity: 0.5;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.headmenu > li > a:hover .count, .headmenu > li.open > a .count {
+    opacity: 1;
+}
+.headmenu > li > a .headmenu-label {
+    display: block;
+    margin: 2px 0 3px;
+    opacity: 0.5;
+    text-align: center;
+}
+.headmenu > li > a:hover .headmenu-label, .headmenu > li.open > a .headmenu-label {
+    opacity: 1;
+}
+.headmenu > li > a .head-icon {
+    display: block;
+    height: 50px;
+    margin: auto;
+    opacity: 0.5;
+    width: 50px;
+}
+.headmenu > li > a:hover .head-icon, .headmenu > li.open a .head-icon {
+    opacity: 1;
+}
+.head-message {
+    background-image: url("../images/icons/message.png");
+}
+.head-users {
+    background-image: url("../images/icons/users.png");
+}
+.head-bar {
+    background-image: url("../images/icons/bar.png");
+}
+.viewmore a {
+    font-size: 11px !important;
+    text-transform: uppercase;
+}
+.newusers {
+    min-width: 200px;
+}
+.newusers li a:hover {
+}
+.newusers .userthumb {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 35px;
+}
+.newusers strong {
+    display: block;
+    line-height: normal;
+}
+.newusers small {
+    color: #999999;
+    line-height: normal;
+}
+.userloggedinfo {
+    color: #FFFFFF;
+    padding: 11px;
+}
+.userloggedinfo img {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+    float: left;
+    padding: 3px;
+    width: 80px;
+}
+.userloggedinfo .userinfo {
+    float: left;
+    margin-left: 10px;
+}
+.userloggedinfo .userinfo small {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.userloggedinfo ul {
+    list-style: none outside none;
+    margin-top: 5px;
+}
+.userloggedinfo ul li {
+    display: block;
+    font-size: 11px;
+    line-height: normal;
+    margin-bottom: 1px;
+}
+.userloggedinfo ul li a {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    display: block;
+    line-height: normal;
+    padding: 4px 5px 3px;
+}
+.userloggedinfo ul li a:hover {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+.no-borderradius .userloggedinfo .userinfo {
+    float: none;
+    margin-left: 92px;
+}
